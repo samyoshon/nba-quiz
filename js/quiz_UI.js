@@ -1,3 +1,4 @@
+console.log('git-ui test');
 //Object literal for QuizUI
 
 var QuizUI = {
