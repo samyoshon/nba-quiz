@@ -17,7 +17,7 @@ Quiz.prototype.guess = function(answer) {
     this.currentQuestionIndex++;
 };
 
-	//Method 'getCurrentQuestion' retrieves next question from question array
+	//Method 'getCurrentQuestion' retrieves current question from question array
 
 Quiz.prototype.getCurrentQuestion = function() {
     return this.questions[this.currentQuestionIndex];
