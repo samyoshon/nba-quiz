@@ -21,7 +21,8 @@ var QuizUI = {
         var choices = quiz.getCurrentQuestion().choices;
 
         for(var i = 0; i < choices.length; i++) {
-            this.populateIdWithHTML("choice" + i, choices[i]);
+            this.populateOptions("choice" + i, choices[i]);
+            // this.populateIdWithHTML("choice" + i, choices[i]);
             this.guessHandler("guess" + i, choices[i]);
         }
     },
@@ -45,12 +46,20 @@ var QuizUI = {
         button.onclick = function() {
             quiz.guess(guess);
             QuizUI.displayNext();
-        }
+        };
     },
     
     //Shows progress as question moves foward
     displayProgress: function() {
         var currentQuestionNumber = quiz.currentQuestionIndex + 1;
         this.populateIdWithHTML("progress", "Question " + currentQuestionNumber + " of " + quiz.questions.length);
+    },
+
+    populateOptions: function(id, text) {
+        var questionChoices = "<p id='" + id + "'>" + text + "</p>";
+        var questionButtons = "<button id='" + id + "' class='btn--default'>Select Answer</button>";
+        $('#options').append(questionChoices);
+        $('#options').append(questionButtons);
+        // divOptions.innerHTML(questionChoices);
     }
 };
