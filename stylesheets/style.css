@@ -375,7 +375,7 @@ footer {
 
 .nav__item--current a, .nav__item a:hover {
   color: #0b0b0b;
-  border-color: #52bab3; }
+  border-color: #FA8320; }
 
 h1, .headline-primary, .headline-primary--grouped {
   color: #525559;
@@ -456,12 +456,12 @@ h2, .headline-secondary, .headline-secondary--grouped {
   color: black;
   font-weight: 300; }
   .form__input:focus {
-    border-color: #52bab3; }
+    border-color: #FA8320; }
 .form__btn {
-  background: #52bab3; }
+  background: #FA8320; }
 
 .btn--default {
-  background-color: #52bab3; }
+  background-color: #FA8320; }
 .btn--success {
   background-color: #5ece7f; }
 .btn--error {
@@ -515,7 +515,7 @@ h2, .headline-secondary, .headline-secondary--grouped {
   position: relative;
   margin-bottom: 2.875em; }
   .progbar__status--default {
-    background-color: #52bab3; }
+    background-color: #FA8320; }
     .progbar__status--default:after {
       background-color: #6fc6c0; }
   .progbar__status--success {

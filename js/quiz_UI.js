@@ -45,6 +45,7 @@ var QuizUI = {
         var button = document.getElementById(id);
         button.onclick = function() {
             quiz.guess(guess);
+                //Clears all appended options
             $('#options').empty();
             QuizUI.displayNext();
         };
